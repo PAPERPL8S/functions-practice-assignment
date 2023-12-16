@@ -12,7 +12,17 @@
  */
 
 // Your code goes here...
+function getDiffTwentySeven(num) {
+  if (num > 27) {
+    const difference = num - 27;
+    const doubledDifference = 2 * Math.abs(difference);
+    console.log(`The number is greater than 27. Double the absolute difference: ${doubledDifference}`);
+  } else {
+    console.log(`The number is not greater than 27. Difference: ${27 - num}`);
+  }
+}
 
+getDiffTwentySeven(34);
 
 
 
@@ -24,7 +34,19 @@
  */
 
 // Your code goes here
+function sumOfTwoIntegers(num1, num2) {
+  const addedSum = num1 + num2;
 
+  if (num1 === num2) {
+    const tripleSum = 3 * addedSum;
+    console.log(`Number 1 is equal to Number 2. Triple the sum: ${tripleSum}`);
+  } else {
+    console.log(`Number 1 is not equal to Number 2. The sum of adding these numbers is: ${addedSum}.`);
+  }
+}
+
+sumOfTwoIntegers(45, 45);
+sumOfTwoIntegers(45, 47);
 
 
 
@@ -38,6 +60,17 @@
  */
 
 // Your code goes here...
+function isOneOfThemOrTheirSumIsFourty(num1, num2) {
+  const num = 40;
+  const addedSum = num1 + num2;
+
+  if (num1 === num || num2 === num || addedSum === num) {
+    return true;
+  } else {
+    return false;
+  }
+}
+  console.log(isOneOfThemOrTheirSumIsFourty(52, -1));
 
 
 

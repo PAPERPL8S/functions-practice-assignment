@@ -15,8 +15,17 @@
  */
 
 // Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (var elem of arr) {
+    if (elem >= val1 && elem <= val2) {
+      return true;
+    }
+  }
+  return false;
+}
 
-
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10));
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5));
 
 
 /**
@@ -35,9 +44,33 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(val1, val2) {
+  if (val1 === val2) {
+    return "Values are equal";
+  } else {
+    return "Values are not equal";
+  }
+}
 
+console.log(getValueWithConditionOne(40, 40));
+console.log(getValueWithConditionOne(20, 30));
 
+// Arrow function declaration
+const getValueWithConditionOneArrow = (val1, val2) => {
+  return val1 === val2 ? "Values are equal" : "Values are not equal";
+};
 
+console.log(getValueWithConditionOneArrow(40, 40));
+console.log(getValueWithConditionOneArrow(20, 30));
+
+//Function expression declaration
+
+const getValueWithConditionOne = function(val1, val2) {
+  return val1 === val2 ? "Values are equal" : "Values are not equal";
+};
+
+console.log(getValueWithConditionOne(40, 40));
+console.log(getValueWithConditionOne(20, 30));
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"

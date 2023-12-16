@@ -2,6 +2,8 @@
 // BEFORE YOU START: please read the /exercises-info/e1.md file.
 // NAMED FUNCTION SYNTAX: is described in /exercises-info/e4.md file.
 
+import { test } from "vitest";
+
 /**
  * ====================================================
  * Create a function to work as follows:
@@ -18,6 +20,8 @@
 function logMessage() {
   console.log('Hello, World!');
 }
+
+ logMessage();
 
 
 
@@ -38,6 +42,8 @@ function logMyMessage() {
   console.log('I logged my first message!');
 }
 
+logMyMessage();
+
 
 /**
  * ===============================================================
@@ -54,6 +60,8 @@ function logMessageWithMyName() {
   var myName = 'Andre';
   console.log('My name is ' + myName);
 }
+
+logMessageWithMyName();
 
 
 
@@ -73,9 +81,10 @@ function logMessageWithMyName() {
 function logMyInfo() {
   var myName = 'Andre.';
   var age = 18;
-  console.log('My name is ' + myName + 'I am ' + age + ' years old!');
+  console.log('My name is ' + myName + '. I am ' + age + ' years old!');
 }
 
+logMyInfo();
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
