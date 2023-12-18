@@ -45,3 +45,4 @@ restore those file's initial state with ```git restore <fileName>``` command.
 - Commit and push the changes to your repository (the one you have created on step 2 of GETTING STARTED).
 - Submit the txt file with a repo link on the exercise page in devslopes course.
 # functions-practice-assignment
+# for-loops-function-practice-solved
