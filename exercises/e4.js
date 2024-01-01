@@ -9,11 +9,9 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-const splitFirstAndLastNames = (str) => {
-  return str.split(' ');
-};
+const splitFirstAndLastNames = (str) => str.split(' ');
 
-console.log(splitFirstAndLastNames('John Smith'));
+
 
 
 
@@ -23,13 +21,7 @@ console.log(splitFirstAndLastNames('John Smith'));
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = (id, name, age) => {
-  console.log({ id, name, age });
-  return age;
-};
-
-console.log(personAge(1, 'John', 32));
-
+const personAge = (personobject) => personobject.age;
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
  * The function returns the boolean (true/false) if the name exists in the given array
@@ -37,13 +29,7 @@ console.log(personAge(1, 'John', 32));
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = (arr, name) => {
-  return arr.includes(name);
-};
-
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'Michael'))
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'James'))
-
+const isNameInArray = (arr, name) => arr.includes(name);
 /** =========================
  * The logTimer function takes a number as the arguments.
  * The function keeps logging the incremented value every second
@@ -61,9 +47,6 @@ const logSecondsUpToMax = (max) => {
     }
   }, 1000);
 };
-
-logSecondsUpToMax(30);
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"
